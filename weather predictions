@@ -1,0 +1,14 @@
+#this python code predics weather using certain inputs
+
+t=int(input("Enter the number: "))
+h=int(input("Enter the number: "))
+ws=int(input("Enter the number: "))
+w = (0.5*t*t)-(0.2*h)+(0.1*ws)-15
+if w>300:
+    print("sunny")
+elif w>200 and w<=300:
+    print("cloudy")
+elif w>100 and w<=200:
+    print("Rainy")
+elif w<=100:
+    print("Stormy")
